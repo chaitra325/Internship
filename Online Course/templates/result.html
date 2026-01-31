@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Course Success Predictor – Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Prediction Result</h1>
+  </header>
+
+  <div class="card">
+    <h2>Course</h2>
+    <p class="proba-text">
+      {% if course_title %}{{ course_title }}{% endif %}
+      {% if course_category %} – {{ course_category }}{% endif %}
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Model Prediction</h2>
+    <p>
+      <span class="result-badge {% if 'High' in prediction %}result-high{% else %}result-low{% endif %}">
+        {{ prediction }}
+      </span>
+    </p>
+    <p class="proba-text">
+      Probability of high success: {{ proba }}
+    </p>
+  </div>
+
+  {% if suggestions %}
+    <div class="card">
+      <h2>AI Design Recommendations</h2>
+      <pre>{{ suggestions }}</pre>
+    </div>
+  {% endif %}
+
+  <a href="{{ url_for('input_page') }}" class="btn">Back to input</a>
+
+  <footer>
+    Online Course Success Predictor & AI Advisor
+  </footer>
+</div>
+</body>
+</html>

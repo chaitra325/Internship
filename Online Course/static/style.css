@@ -1,0 +1,146 @@
+/* static/style.css */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fb;
+    color: #222;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+header {
+    margin-bottom: 24px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 26px;
+    color: #222;
+}
+
+header p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e4f0;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 4px rgba(15, 23, 42, 0.04);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #1f2933;
+}
+
+.card h3 {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #1f2933;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #374151;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px #2563eb33;
+}
+
+.radio-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 0;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+.result-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.result-high {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.result-low {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.proba-text {
+    font-size: 14px;
+    color: #374151;
+    margin-top: 4px;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #9ca3af;
+    text-align: center;
+}
